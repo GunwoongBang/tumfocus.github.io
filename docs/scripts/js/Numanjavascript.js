@@ -48,6 +48,6 @@ document.getElementById("loginButton").addEventListener("click", function () {
     if (username === "" || password === "") {
       alert("Please fill in both username and password.");
     } else {
-      window.location.href = "doc/Home.html";
+      window.location.href = "docs/Home.html";
     }
   });
