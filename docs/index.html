@@ -1,63 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign In</title>
+    <title>Home</title>
     <link rel="stylesheet" href="scripts/css/style.css" />
-    <link rel="stylesheet" href="scripts/css/logo.css" />
+    <link rel="stylesheet" href="scripts/css/home.css" />
   </head>
 
   <body>
     <div class="container">
-      <!-- Logo Section -->
-      <div class="logo-container-signin">
-        <img class="ipp-logo-1" src="images/IPP_Logo.png" alt="IPP Logo" />
-      </div>
-
-      <!-- Login Form -->
-      <form class="login-form">
-        <div class="input-field">
-          <label for="username">Username</label>
-          <input
-            type="text"
-            id="username"
-            name="username"
-            placeholder="Enter your username"
-            required
-          />
-        </div>
-
-        <div class="input-field">
-          <label for="password">Password</label>
-          <div class="password-container">
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="Enter your password"
-              required
-            />
+      <!-- Profile Section -->
+      <section class="profile-section" id="frameContainer">
+        <div class="profile">
+          <div class="profile-picture">
             <img
-              class="eye-icon"
-              alt="Show/Hide Password"
-              src="images/eye-off.svg"
-              onclick="togglePassword()"
+              class="component-1-icon"
+              src="images/Profile_Picture.svg"
+              alt="Profile Icon"
             />
           </div>
+          <a href="profile.html">
+            <b class="yondu-udonta" id="yonduUdontaText">Yondu Udonta</b>
+          </a>
         </div>
+        <div class="seed" id="seedContainer">
+          <span class="seed-count">25000</span>
+          <img class="seed-icon" src="images/Seed.svg" alt="Seed Icon" />
+        </div>
+      </section>
 
-        <button type="button" id="loginButton" class="login-button">
-          <a href="home.html">Log In</a></button>
-      </form>
+      <!-- Tree Card -->
+      <div class="card-tree">
+        <img class="tree-image" src="images/tree.png" alt="Tree Image" />
+      </div>
 
-      <!-- Links -->
-      <div class="additional-links">
-        <a href="#" class="forgot-password">Forgot Password?</a>
-        <a href="#" class="privacy">Privacy</a>
+      <!-- Study Helper Section -->
+      <div class="study-helper">
+        <h3>Study Helper</h3>
+        <div class="slider-container">
+          <label class="switch">
+            <input type="checkbox" id="slider-toggle" />
+            <span class="slider"></span>
+          </label>
+        </div>
       </div>
     </div>
-
+    <!-- Bottom Navigation -->
+    <div class="menu-bar">
+      <div class="menu-item">
+        <a href="home.html"><img src="images/HomeScreen.svg" alt="Home" /></a>
+      </div>
+      <div class="menu-item">
+        <a href="studyHelper.html"
+          ><img src="images/StudyHelper1.svg" alt="Study Helper"
+        /></a>
+      </div>
+      <div class="menu-item">
+        <a href="scheduleManager.html"
+          ><img src="images/ScheduleManager.svg" alt="Schedule Manager"
+        /></a>
+      </div>
+      <div class="menu-item">
+        <a href="screenTimeController.html"
+          ><img
+            src="images/ScreentimeController.svg"
+            alt="Screen Time Controller"
+        /></a>
+      </div>
+      <div class="menu-item">
+        <a href="communityGarden.html"
+          ><img src="images/Community.svg" alt="Community"
+        /></a>
+      </div>
+    </div>
+    <script src="scripts/js/updateTime.js"></script>
     <script src="scripts/js/Numanjavascript.js"></script>
   </body>
 </html>
