@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="scripts/css/style.css" />
+    <link rel="stylesheet" href="scripts/css/logo.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Logo Section -->
+      <div class="logo-container-signin">
+        <img class="ipp-logo-1" src="images/IPP_Logo.png" alt="IPP Logo" />
+      </div>
+
+      <!-- Login Form -->
+      <form class="login-form">
+        <div class="input-field">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your username"
+            required
+          />
+        </div>
+
+        <div class="input-field">
+          <label for="password">Password</label>
+          <div class="password-container">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+            <img
+              class="eye-icon"
+              alt="Show/Hide Password"
+              src="images/eye-off.svg"
+              onclick="togglePassword()"
+            />
+          </div>
+        </div>
+
+        <button type="button" id="loginButton" class="login-button">Log In</button>
+      </form>
+
+      <!-- Links -->
+      <div class="additional-links">
+        <a href="#" class="forgot-password">Forgot Password?</a>
+        <a href="#" class="privacy">Privacy</a>
+      </div>
+    </div>
+
+    <script src="scripts/js/Numanjavascript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community Garden</title>
+    <link rel="stylesheet" href="scripts/css/style.css" />
+    <link rel="stylesheet" href="scripts/css/communityGarden.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Title Section -->
+      <div class="header">
+        <h1>Your Garden</h1>
+        <div class="seed" id="seedContainer">
+          <span class="seed-count">25000</span>
+          <img class="seed-icon" src="images/Seed.svg" alt="Seed Icon" />
+        </div>
+      </div>
+
+      <!-- Garden Section -->
+      <div id="main-garden">
+        <button id="prev-btn" class="nav-btn">&lt;</button>
+        <div class="garden-card">
+          <div class="garden-bg">
+            <img
+              src="images/group_garden.png"
+              alt="Garden View"
+              id="garden-image"
+            />
+          </div>
+          <div class="garden_no">
+            <p>Garden I</p>
+          </div>
+        </div>
+        <button id="next-btn" class="nav-btn">&gt;</button>
+      </div>
+
+      <button class="community-btn" id="community-btn">Community</button>
+
+      <!-- Community Modal -->
+      <div id="community-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" id="close-community-modal">&times;</span>
+          <h3>Friends</h3>
+          <div id="friends-container" class="friends-list">
+            <button id="add-friend-btn" class="add-btn">+</button>
+          </div>
+
+          <h3>Groups</h3>
+          <div id="groups-container" class="groups-list">
+            <button id="add-group-btn" class="add-btn">+</button>
+          </div>
+
+          <h3>Leaderboard</h3>
+          <div class="leaderboard"></div>
+        </div>
+      </div>
+
+      <!-- Add Friend Modal -->
+      <div id="add-friend-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" id="close-add-friend-modal">&times;</span>
+          <h3>Select a Friend</h3>
+          <select id="friend-select"></select>
+          <button id="confirm-add-btn">Confirm</button>
+        </div>
+      </div>
+    </div>
+    <!-- Bottom Navigation -->
+    <div class="menu-bar">
+      <div class="menu-item">
+        <a href="Home.html"><img src="images/HomeScreen.svg" alt="Home" /></a>
+      </div>
+      <div class="menu-item">
+        <a href="studyHelper.html"
+          ><img src="images/StudyHelper1.svg" alt="Study Helper"
+        /></a>
+      </div>
+      <div class="menu-item">
+        <a href="scheduleManager.html"
+          ><img src="images/ScheduleManager.svg" alt="Schedule Manager"
+        /></a>
+      </div>
+      <div class="menu-item">
+        <a href="screenTimeController.html"
+          ><img
+            src="images/ScreentimeController.svg"
+            alt="Screen Time Controller"
+        /></a>
+      </div>
+      <div class="menu-item">
+        <a href="communityGarden.html"
+          ><img src="images/Community.svg" alt="Community"
+        /></a>
+      </div>
+    </div>
+    <script src="scripts/js/communityGarden.js"></script>
+  </body>
+</html>

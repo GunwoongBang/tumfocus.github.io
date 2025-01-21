@@ -1,0 +1,117 @@
+/* Profile Picture */
+.profile-picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-picture-icon {
+  width: 80px; /* Adjusted size */
+  height: 80px;
+  border-radius: 50%;
+  background-color: #313131;
+}
+
+/* User Name */
+.user-name-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 360px; /* Full width */
+  padding: 10px; /* Add some padding */
+  background: #313131; /* Dark background color */
+  color: #ffffff; /* White text color */
+  border-radius: 10px; /* Rounded corners */
+  margin: 5px 0; /* Space around */
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Seeds Section */
+.seeds-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px 0; /* Reduced vertical margin */
+  width: 360px;
+  padding: 0 10px;
+}
+
+.seeds-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px; /* Reduced padding inside */
+  background: #f5f5f5;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.seeds-label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px; /* Space between label and container */
+  color: black;
+  width: calc(100% + 20px);
+  text-align: left;
+}
+
+.seeds-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px; /* Spacing between seed count and icon */
+}
+
+/* Statistics Section */
+.statistics-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px 0; /* Reduced vertical margin */
+  width: 360px;
+  padding: 0 10px;
+}
+
+.statistics-label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px; /* Space between label and container */
+  color: black;
+  text-align: left;
+  width: calc(100% + 20px);
+}
+
+.statistics-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px; /* Adjusted height for placeholder */
+  background: #f5f5f5;
+  width: 100%;
+  padding: 10px;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* Log Out Button */
+.logout-button {
+  width: 70%;
+  padding: 10px; /* Reduced padding inside button */
+  background: #313131;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.logout-button:hover {
+  background: #507d29;
+}

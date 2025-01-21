@@ -1,0 +1,234 @@
+.todo-item {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e3e3e3;
+  height: 60px;
+}
+
+.todo-item-header {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+  margin-left: 10px;
+  align-content: center;
+  height: 100%;
+}
+
+/* Adjust label styling if needed */
+.todo-item-header input + label {
+  flex-grow: 1;
+  align-self: center;
+  margin-left: 5px;
+}
+
+.todo-item-header input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #507d29;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  background-color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+  align-self: center;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-item-header input[type="checkbox"]:checked + label {
+  border-color: #507d29;
+  background-color: white;
+}
+
+.todo-item-header input[type="checkbox"]:checked::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #507d29;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.todo-item-header input {
+  width: 240px;
+}
+
+input[type="text"] {
+  border: none;
+  font-size: 1rem;
+  margin-left: 3px;
+  width: 250px;
+}
+
+input[type="text1"] {
+  margin-left: 40px;
+  border: none;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.function-btn {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  margin: auto;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.function-btn img {
+  width: 25px;
+  height: 25px;
+}
+
+.function-btn img[alt="details icon"] {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  margin-top: 2px;
+}
+
+.details-template {
+  width: 380px;
+  top: 500px;
+  height: 400px;
+  margin-left: -21px;
+  justify-content: center;
+  align-items: center;
+  background-color: #507d29;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  align-self: center;
+  z-index: 1;
+  position: absolute;
+  bottom: -100%;
+  overflow: hidden;
+  transition: bottom 0.3s ease-in-out;
+}
+
+.details-template.show {
+  bottom: 0%;
+}
+
+.details-header {
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.125rem;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.close-btn {
+  width: 24px;
+  height: 24px;
+  background-color: #507d29;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  top: 20px;
+  right: 25px;
+  position: absolute;
+}
+
+.close-btn img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.details-template.show input[type="checkbox"] {
+  margin: 0;
+  margin-right: 20px;
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid white;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #507d29;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+  align-self: center;
+  vertical-align: middle;
+}
+
+.details-template.show input[type="checkbox"]:checked + label {
+  border-color: white;
+  background-color: #507d29;
+  vertical-align: middle;
+}
+
+.details-template.show input[type="checkbox"]:checked::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  vertical-align: middle;
+}
+
+.details-template.show label {
+  color: white;
+}
+
+input[type="date"],
+input[type="time"] {
+  font-family: "Roboto Mono", monospace;
+  font-size: 23px;
+  border: none;
+  color: white;
+  width: 200px;
+  outline: none;
+  margin: 0 20px;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+  padding: 5px;
+  background-color: #507d29;
+}
+
+input[type="date"]:disabled,
+input[type="time"]:disabled {
+  background-color: #507d29;
+  color: rgb(180, 180, 180);
+  border-color: none;
+  font-size: 23px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  color: white;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.menu-bar {
+  z-index: inherit;
+}

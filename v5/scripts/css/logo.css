@@ -1,0 +1,144 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.page-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Status Bar */
+.status-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    color: #000;
+}
+
+.right-header img {
+    margin-left: 10px;
+}
+
+/* Logo Container */
+.logo-container-signin {
+    display: flex;
+    width: 380px;
+    height: 380px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px 0;
+}
+
+.ipp-logo-1 {
+    max-width: 80%; /* Adjust size */
+    height: auto;
+}
+
+/* Login Form */
+.login-form {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-field label {
+    font-size: 14px;
+    color: #555;
+}
+
+.input-field input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.input-field input:focus {
+    border-color: #507d29;
+    box-shadow: 0 0 5px rgba(80, 125, 41, 0.5);
+}
+
+/* Password Field */
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    padding-right: 40px; /* Space for eye icon */
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.eye-icon:hover {
+    opacity: 1;
+}
+
+/* Login Button */
+.login-button {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #313131;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.login-button:hover {
+    background-color: #507d29;
+}
+
+/* Additional Links */
+.additional-links {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: left;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.additional-links a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.additional-links a:hover {
+    text-decoration: underline;
+}

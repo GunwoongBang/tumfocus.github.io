@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Screen Time Controller</title>
+    <link rel="stylesheet" href="scripts/css/style.css" />
+    <link rel="stylesheet" href="scripts/css/screenTimeController.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Screen Time Controller</h1>
+      </div>
+
+      <!-- New Package Section -->
+      <div class="title-container">
+        <h3>New package</h3>
+      </div>
+
+      <!-- create new package -->
+      <div class="new-package">
+        <!-- timer -->
+        <div class="timer-package">
+          <h3 class="title-timer">Timer</h3>
+          <div class="time-picker">
+            <div class="column hours" id="hours-column"></div>
+            <div class="separator">:</div>
+            <div class="column minutes" id="minutes-column"></div>
+            <div class="separator">:</div>
+            <div class="column seconds" id="seconds-column"></div>
+          </div>
+        </div>
+
+        <!-- application -->
+        <div class="new-application-package-container">
+          <h3 class="title-app">Applications</h3>
+          <div class="new-application-package">
+            <div class="applications">
+              <div class="app"></div>
+              <div class="app"></div>
+              <div class="app"></div>
+              <div class="app"></div>
+              <button class="add-app" id="newPackagePlus">+</button>
+              <!-- Ensure correct id -->
+            </div>
+          </div>
+        </div>
+
+        <!-- button -->
+        <div class="controls">
+          <button id="stop-button">Stop</button>
+          <button id="pause-button" class="hidden">Pause</button>
+          <button id="start-button">Start</button>
+        </div>
+
+        <!-- countdown -->
+        <div id="countdown-display"></div>
+      </div>
+
+      <!-- Application Packages -->
+      <div class="title-container">
+        <div class="recent-timers">
+          <h3>Recent Timers</h3>
+          <div class="scrollable-container">
+            <ul id="history-list"></ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pop Up Application -->
+      <!-- Pop-Up Modal -->
+      <div class="popup-modal" id="applicationModal">
+        <div class="popup-content">
+          <h3>Applications</h3>
+          <button class="close-btn" id="closeApplicationModal">&times;</button>
+          <div class="application-list">
+            <div class="app-item">
+              <img src="images/Podcasts.png" alt="Podcast Icon" />
+              <p>Podcast</p>
+            </div>
+            <div class="app-item">
+              <img src="images/Music.png" alt="Music Icon" />
+              <p>Music</p>
+            </div>
+            <div class="app-item">
+              <img src="images/GarageBand.png" alt="Garage Band Icon" />
+              <p>Garage Band</p>
+            </div>
+            <div class="app-item">
+              <img src="images/Books.png" alt="Books Icon" />
+
+              <p>Books</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bottom Navigation -->
+    <div class="menu-bar">
+      <div class="menu-item">
+        <a href="Home.html"><img src="images/HomeScreen.svg" alt="Home" /></a>
+      </div>
+      <div class="menu-item">
+        <a href="studyHelper.html"
+          ><img src="images/StudyHelper1.svg" alt="Study Helper"
+        /></a>
+      </div>
+      <div class="menu-item">
+        <a href="scheduleManager.html"
+          ><img src="images/ScheduleManager.svg" alt="Schedule Manager"
+        /></a>
+      </div>
+      <div class="menu-item">
+        <a href="screenTimeController.html"
+          ><img
+            src="images/ScreentimeController.svg"
+            alt="Screen Time Controller"
+        /></a>
+      </div>
+      <div class="menu-item">
+        <a href="communityGarden.html"
+          ><img src="images/Community.svg" alt="Community"
+        /></a>
+      </div>
+    </div>
+
+    <script src="scripts/js/screenTImeController.js"></script>
+  </body>
+</html>
