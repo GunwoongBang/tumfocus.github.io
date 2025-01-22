@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 360px; /* Full width */
+  width: 350px; /* Full width */
   padding: 10px; /* Add some padding */
   background: #313131; /* Dark background color */
   color: #ffffff; /* White text color */
@@ -37,8 +37,7 @@
   flex-direction: column;
   align-items: center;
   margin: 5px 0; /* Reduced vertical margin */
-  width: 360px;
-  padding: 0 10px;
+  width: 350px;
 }
 
 .seeds-display {
@@ -55,6 +54,7 @@
 .seeds-label {
   font-size: 12px;
   font-weight: bold;
+  margin-left: 20px;
   margin-bottom: 5px; /* Space between label and container */
   color: black;
   width: calc(100% + 20px);
@@ -73,14 +73,14 @@
   flex-direction: column;
   align-items: center;
   margin: 5px 0; /* Reduced vertical margin */
-  width: 360px;
-  padding: 0 10px;
+  width: 350px;
 }
 
 .statistics-label {
   font-size: 12px;
   font-weight: bold;
   margin-bottom: 5px; /* Space between label and container */
+  margin-left: 20px;
   color: black;
   text-align: left;
   width: calc(100% + 20px);
@@ -110,6 +110,11 @@
   border-radius: 10px;
   cursor: pointer;
   margin-top: 10px;
+}
+
+.logout-button a {
+  text-decoration: none;
+  color: white;
 }
 
 .logout-button:hover {

@@ -1,5 +1,5 @@
 // Pop Up adding applications
-  document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const newPackagePlusButton = document.getElementById('newPackagePlus'); // Target the specific "+" button
   const applicationModal = document.getElementById('applicationModal'); // Modal container
   const closeApplicationModal = document.getElementById('closeApplicationModal'); // Close button

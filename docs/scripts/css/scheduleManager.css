@@ -13,12 +13,14 @@
   margin-left: 10px;
   align-content: center;
   height: 100%;
+  justify-content: flex-start;
 }
 
 /* Adjust label styling if needed */
 .todo-item-header input + label {
   flex-grow: 1;
   align-self: center;
+  text-align: left;
   margin-left: 5px;
 }
 
@@ -106,7 +108,7 @@ input[type="text"]:focus {
   width: 380px;
   top: 500px;
   height: 400px;
-  margin-left: -21px;
+  margin-left: -25px;
   justify-content: center;
   align-items: center;
   background-color: #507d29;

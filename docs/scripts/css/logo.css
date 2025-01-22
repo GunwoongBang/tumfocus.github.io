@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     background-color: #ffffff;
     color: #333;
 }
@@ -32,7 +32,6 @@ body {
 /* Logo Container */
 .logo-container-signin {
     display: flex;
-    width: 380px;
     height: 380px;
     justify-content: center;
     align-items: center;
@@ -42,6 +41,7 @@ body {
 .ipp-logo-1 {
     max-width: 80%; /* Adjust size */
     height: auto;
+    align-items: center;
 }
 
 /* Login Form */

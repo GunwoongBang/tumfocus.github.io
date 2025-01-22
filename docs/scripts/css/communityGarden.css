@@ -156,8 +156,8 @@
 .modal {
   position: fixed;
   bottom: -100%;
-  left: 0;
-  width: 90%;
+  left: 10px;
+  width: 95%;
   height: 70%;
   background-color: white;
   border-radius: 20px 20px 0 0;
@@ -176,6 +176,7 @@
   flex-shrink: 0;
   text-align: center;
   position: relative;
+  z-index: 100;
 }
 
 .close-btn {
