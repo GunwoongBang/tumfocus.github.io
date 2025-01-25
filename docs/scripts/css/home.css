@@ -5,6 +5,7 @@
   align-items: center;
   width: 100%;
   margin: 10px;
+  margin-top: 0;
 }
 
 .profile {
@@ -59,7 +60,7 @@
   align-items: center;
   position: relative;
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 /* Study Helper Section */

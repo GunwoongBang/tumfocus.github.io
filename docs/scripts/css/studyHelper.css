@@ -1,6 +1,6 @@
 /* Timer Section */
 .timer-section {
-  margin: 10px auto;
+  margin: 5px auto;
   background: #507d29;
   border-radius: 20px;
   padding: 10px;
@@ -93,7 +93,7 @@
 
 /* Accessibility Section */
 .accessibility-section {
-  margin: 10px auto;
+  margin: 5px auto;
   position: relative;
 }
 
@@ -265,10 +265,12 @@
 
 /* White Noise Section */
 .noise-section {
-  margin: 10px auto;
+  margin: 5px auto;
   background: #507d29;
   border-radius: 20px;
   padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: white;
 }
 
