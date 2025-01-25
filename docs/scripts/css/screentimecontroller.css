@@ -49,9 +49,8 @@
   margin: 0;
 }
 
-.package-header .start,
-.package-header .stop {
-  padding: 6px 12px;
+.package-header .start {
+  padding: 6px;
   font-size: 12px;
   border-radius: 20px;
   background-color: #333;
@@ -65,7 +64,7 @@
 }
 
 .package-header .stop {
-  padding: 6px 12px;
+  padding: 6px;
   font-size: 12px;
   border-radius: 20px;
   background-color: #d1d1d1;
