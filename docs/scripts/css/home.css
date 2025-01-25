@@ -14,6 +14,10 @@
   gap: 10px;
 }
 
+.profile a {
+  text-decoration: none;
+}
+
 .profile-picture {
   width: 30px;
   height: 30px;
@@ -33,6 +37,7 @@
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
+  color: black;
 }
 
 .seed {
