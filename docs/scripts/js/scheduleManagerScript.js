@@ -83,6 +83,7 @@ function addEmptyTask() {
     dateCheckbox,
     dateLabel,
     dateInput,
+    document.createElement("br"),
     timeCheckbox,
     timeLabel,
     timeInput
