@@ -50,7 +50,9 @@
 }
 
 .package-header .start {
-  padding: 6px;
+  padding: 6px 0;
+  margin-right: 5px;
+  width: 45px;
   font-size: 12px;
   border-radius: 20px;
   background-color: #333;
@@ -64,7 +66,8 @@
 }
 
 .package-header .stop {
-  padding: 6px;
+  padding: 6px 0;
+  width: 45px;
   font-size: 12px;
   border-radius: 20px;
   background-color: #d1d1d1;
@@ -121,10 +124,6 @@
 .package-applications .add-app:hover {
   background-color: #b0b0b0;
 }
-/* 
-.timer-package {
-  position: relative;
-} */
 
 .time-display {
   font-size: 48px;
@@ -151,13 +150,6 @@ button {
   cursor: pointer;
   border: none;
 }
-
-/* Cancel Button */
-/* .button-cancel {
-    background-color: #d1d1d1;
-    color: #333;
-    height: 30px;
-} */
 
 .button-cancel:hover {
   background-color: #c0c0c0;
@@ -457,6 +449,7 @@ button {
   max-height: calc(100vh - 300px);
   overflow: scroll;
   width: 100%;
+  padding-bottom: 150px;
 }
 
 .scrollable-container::-webkit-scrollbar {
