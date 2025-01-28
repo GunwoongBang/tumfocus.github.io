@@ -24,16 +24,6 @@
   color: #fff;
 }
 
-/* Application Package */
-/* .application-package {
-  margin-top: 5px;
-  padding: 10px;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-} */
-
 /* Package Header (Title and Start Button) */
 .package-header {
   display: flex;
@@ -256,7 +246,7 @@ button {
   position: fixed;
   bottom: -100%;
   left: 0;
-  width: 92%;
+  width: 100%;
   height: 70%;
   background-color: #507d29;
   border-radius: 20px 20px 0 0;
