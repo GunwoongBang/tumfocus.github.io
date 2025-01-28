@@ -222,7 +222,6 @@
   z-index: 1000;
   transition: bottom 0.3s ease-in-out;
   display: flex;
-  /* flex-direction: column; */
   padding: 20px;
 }
 
@@ -236,9 +235,9 @@
 .application-modal .popup-content .application-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 10px;
   justify-content: left;
-  margin: auto 12px;
+  margin: auto 5px;
 }
 
 .app-item {
